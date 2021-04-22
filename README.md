@@ -32,6 +32,39 @@
 $ npm install
 ```
 
+## Prepare
+
+### .env
+
+```bash
+POSTGRES_HOST=localhost
+POSTGRES_USER=admin
+POSTGRES_PASSWORD=admin
+POSTGRES_PORT=5434
+POSTGRES_DB=emails-postgres
+PORT=6000
+RABBITMQ_USER=admin
+RABBITMQ_PASSWORD=admin
+RABBITMQ_HOST=localhost:5672
+RABBITMQ_QUEUE_NAME=email-subscribers
+```
+
+### docker.env
+
+```bash
+POSTGRES_USER=admin
+POSTGRES_PASSWORD=admin
+POSTGRES_DB=emails-postgres
+PGADMIN_DEFAULT_EMAIL=admin@admin.com
+PGADMIN_DEFAULT_PASSWORD=admin
+```
+
+### Create docker containers
+
+```bash
+$ docker-compose up
+```
+
 ## Running the app
 
 ```bash
